@@ -8,7 +8,9 @@ import random
 
 from Complaint import Complaint
 
-def fill_form(complaint, link, driver):
+def fill_form(complaint, link):
+    driver = webdriver.Firefox()
+
     # Navigate to the provided link
     driver.get(link)
 
@@ -49,6 +51,7 @@ def fill_form(complaint, link, driver):
     submit_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[text()='Submit']")))
     submit_button.click()
 
+    driver.quit()
 
 
 def pick_random_value(strings_list):
@@ -71,7 +74,7 @@ def generate_missouri_phone_number():
     area_code = random.choice(["314", "417", "573", "636", "660", "816"])
     prefix = random.randint(200, 999)
     line_number = random.randint(1000, 9999)
-    return f"({area_code}) {prefix}-{line_number}"
+    return f"({area_code}){prefix}{line_number}"
 
 def generate_email(first_name, surname):
     domains = ["gmail.com", "yahoo.com", "hotmail.com", "aol.com"]
