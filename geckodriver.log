@@ -516,3 +516,39 @@ JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e
 JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1540116302, line 1: unreachable code after return statement
 JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1540116302 line 1 > eval, line 1: unreachable code after return statement
 JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1540116302 line 1 > eval, line 1: unreachable code after return statement
+1681864308992	Marionette	INFO	Stopped listening on port 63834
+Dynamically enable window occlusion 1
+ng command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56495" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ellen\\AppData\\Local\\Temp\\rust_mozprofilezvPBW5"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681864286883	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681864286886	Marionette	INFO	Listening on port 56502
+WebDriver BiDi listening on ws://127.0.0.1:56495
+Read port: 56502
+1681864287083	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ellen\\AppData\\Local\\Temp\\rust_mozprofilezvPBW5\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:56495/devtools/browser/f80917a3-efaa-4366-bfae-f25ee0796866
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1843088420, line 1: unreachable code after return statement
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1843088420, line 1: unreachable code after return statement
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1843088420 line 1 > eval, line 1: unreachable code after return statement
+1681864309617	Marionette	INFO	Stopped listening on port 56502
+Dynamically enable window occlusion 1
+1681864375693	geckodriver	INFO	Listening on 127.0.0.1:56559
+1681864378758	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56560" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ellen\\AppData\\Local\\Temp\\rust_mozprofileGKF1gq"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681864378991	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681864378994	Marionette	INFO	Listening on port 56567
+WebDriver BiDi listening on ws://127.0.0.1:56560
+Read port: 56567
+1681864379192	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ellen\\AppData\\Local\\Temp\\rust_mozprofileGKF1gq\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:56560/devtools/browser/ac232fda-a083-48eb-9d2d-1d6bd13b480b
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=986428322, line 1: unreachable code after return statement
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=986428322, line 1: unreachable code after return statement
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=986428322 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=986428322 line 1 > eval, line 1: unreachable code after return statement
