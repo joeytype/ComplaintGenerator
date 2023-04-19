@@ -8,49 +8,46 @@ import random
 
 from Complaint import Complaint
 
-
-def fill_form(complaint, link):
-    # Create a new instance of the Firefox browser
-    driver = webdriver.Firefox()
+def fill_form(complaint, link, driver):
     # Navigate to the provided link
     driver.get(link)
 
+    # Wait for the page to load completely
+    driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
     # Wait for the input fields to become visible, then fill them with the provided input values
     wait = WebDriverWait(driver, 10)
-    first_name_input = wait.until(EC.visibility_of_element_located((By.ID, "Textbox-1")))
+    first_name_input = wait.until(EC.presence_of_element_located((By.ID, "Textbox-1")))
     first_name_input.send_keys(complaint.first_name)
 
-    surname_input = wait.until(EC.visibility_of_element_located((By.ID, "Textbox-2")))
+    surname_input = wait.until(EC.presence_of_element_located((By.ID, "Textbox-2")))
     surname_input.send_keys(complaint.surname)
 
-    address_input = wait.until(EC.visibility_of_element_located((By.ID, "Textbox-3")))
+    address_input = wait.until(EC.presence_of_element_located((By.ID, "Textbox-3")))
     address_input.send_keys(complaint.address)
 
-    state_dropdown = wait.until(EC.visibility_of_element_located((By.ID, "Dropdown-1")))
+    state_dropdown = wait.until(EC.presence_of_element_located((By.ID, "Dropdown-1")))
     state_select = Select(state_dropdown)
     state_select.select_by_value(complaint.state_abbrev)
 
-    city_input = wait.until(EC.visibility_of_element_located((By.ID, "Textbox-4")))
+    city_input = wait.until(EC.presence_of_element_located((By.ID, "Textbox-4")))
     city_input.send_keys(complaint.city)
 
-    zip_code_input = wait.until(EC.visibility_of_element_located((By.ID, "Textbox-5")))
+    zip_code_input = wait.until(EC.presence_of_element_located((By.ID, "Textbox-5")))
     zip_code_input.send_keys(complaint.zip_code)
 
-    details_input = wait.until(EC.visibility_of_element_located((By.ID, "Textarea-1")))
+    details_input = wait.until(EC.presence_of_element_located((By.ID, "Textarea-1")))
     details_input.send_keys(complaint.details)
 
-    email_input = wait.until(EC.visibility_of_element_located((By.ID, "Textbox-6")))
+    email_input = wait.until(EC.presence_of_element_located((By.ID, "Textbox-6")))
     email_input.send_keys(complaint.email)
 
-    phone_input = wait.until(EC.visibility_of_element_located((By.ID, "Textbox-7")))
+    phone_input = wait.until(EC.presence_of_element_located((By.ID, "Textbox-7")))
     phone_input.send_keys(complaint.phone)
 
-    # Wait for the submit button to become clickable, then click it to submit the form
-    submit_button = wait.until(EC.element_to_be_clickable((By.TAG_NAME, "button")))
+    # Scroll to the submit button to make it visible, then click it to submit the form
+    submit_button = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[text()='Submit']")))
     submit_button.click()
-
-    # Close the browser window
-    driver.quit()
 
 
 

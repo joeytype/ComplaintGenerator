@@ -1,6 +1,7 @@
 import methods
 from Complaint import Complaint
 import random
+from selenium import webdriver
 
 firstnames = methods.read_file_to_list("first_names.txt")
 surnames = methods.read_file_to_list("surnames.txt")
@@ -32,8 +33,10 @@ def create_complaint():
 #OK THIS IS POWERFUL ONLY RUN IF YOURE SURE EVERYTHINGS READY
 #ALSO THIS HASNT BEEN TESTED AT ALL SO I WILL HAVE TO BUG CHECK EVERYTHING FIRST
 # but yeah this code will make and submit 500 complaints teehee
+driver = webdriver.Firefox()
 
 for i in range(500):
     complaint = create_complaint()
-    methods.fill_form(complaint, "https://ago.mo.gov/file-a-complaint/transgender-center-concerns")
+    methods.fill_form(complaint, "https://ago.mo.gov/file-a-complaint/transgender-center-concerns", driver)
 
+driver.quit()
