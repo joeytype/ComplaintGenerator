@@ -399,8 +399,9 @@ JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://ago.mo.gov."
 JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
 JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
-reachable code after return statement
-JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=1874479631, line 1: unreachable code after return statement
+1681864072205	Marionette	INFO	Stopped listening on port 63556
+Dynamically enable window occlusion 1
+YLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=1874479631, line 1: unreachable code after return statement
 JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=1874479631 line 1 > eval, line 1: unreachable code after return statement
 JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=1874479631 line 1 > eval, line 1: unreachable code after return statement
 1681863467291	Marionette	INFO	Stopped listening on port 63658
@@ -497,3 +498,21 @@ JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error:
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1681864074297	geckodriver	INFO	Listening on 127.0.0.1:63826
+1681864077339	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63827" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ellen\\AppData\\Local\\Temp\\rust_mozprofilebY21Zv"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1681864077574	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1681864077577	Marionette	INFO	Listening on port 63834
+WebDriver BiDi listening on ws://127.0.0.1:63827
+Read port: 63834
+1681864077776	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ellen\\AppData\\Local\\Temp\\rust_mozprofilebY21Zv\\search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:63827/devtools/browser/f1ed6b0c-6a49-4931-86e3-3662154594a1
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1540116302, line 1: unreachable code after return statement
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1540116302, line 1: unreachable code after return statement
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1540116302, line 1: unreachable code after return statement
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1540116302 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://ago.mo.gov/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1540116302 line 1 > eval, line 1: unreachable code after return statement
