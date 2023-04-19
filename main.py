@@ -25,15 +25,15 @@ def create_complaint():
 
 #if you wanna see how a generated complaint looks uncomment these
 
-#complaint1 = create_complaint()
-#methods.print_complaint(complaint1)
+# complaint1 = create_complaint()
+# methods.print_complaint(complaint1)
 
 
 #OK THIS IS POWERFUL ONLY RUN IF YOURE SURE EVERYTHINGS READY
 #ALSO THIS HASNT BEEN TESTED AT ALL SO I WILL HAVE TO BUG CHECK EVERYTHING FIRST
 # but yeah this code will make and submit 500 complaints teehee
 
-# for i in range(500):
-#     complaint = create_complaint()
-#     methods.fill_form(complaint, "https://ago.mo.gov/file-a-complaint/transgender-center-concerns")
+for i in range(500):
+    complaint = create_complaint()
+    methods.fill_form(complaint, "https://ago.mo.gov/file-a-complaint/transgender-center-concerns")
 
