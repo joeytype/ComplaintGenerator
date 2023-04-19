@@ -14,34 +14,34 @@ def fill_form(complaint, link):
     driver.get(link)
 
     # Find the input fields for the form and fill them with the provided input values
-    first_name_input = driver.find_element(By.NAME,"first name")
+    first_name_input = driver.find_element(By.ID, "Textbox-1")
     first_name_input.send_keys(complaint.first_name)
 
-    surname_input = driver.find_element(By.NAME,"last name")
+    surname_input = driver.find_element(By.ID, "Textbox-2")
     surname_input.send_keys(complaint.surname)
 
-    address_input = driver.find_element(By.NAME,"address")
+    address_input = driver.find_element(By.ID, "Textbox-3")
     address_input.send_keys(complaint.address)
 
-    state_select = Select(driver.find_element(By.NAME,"state"))
+    state_select = Select(driver.find_element(By.ID,"Dropdown-1"))
     state_select.select_by_value(complaint.state_abbrev)
 
-    city_input = driver.find_element(By.NAME,"city")
+    city_input = driver.find_element(By.ID, "Textbox-4")
     city_input.send_keys(complaint.city)
 
-    zip_code_input = driver.find_element(By.NAME,"zip_code")
+    zip_code_input = driver.find_element(By.ID,"Textbox-5")
     zip_code_input.send_keys(complaint.zip_code)
 
-    details_input = driver.find_element(By.NAME,"details")
+    details_input = driver.find_element(By.ID,"Textarea-1")
     details_input.send_keys(complaint.details)
 
-    email_input = driver.find_element(By.NAME,"email")
+    email_input = driver.find_element(By.ID,"Textbox-6")
     email_input.send_keys(complaint.email)
 
-    phone_input = driver.find_element(By.NAME,"phone_number")
+    phone_input = driver.find_element(By.ID,"Textbox-7")
     phone_input.send_keys(complaint.phone)
     # Find the submit button and click it to submit the form
-    submit_button = driver.find_element(By.NAME,"submit")
+    submit_button = driver.find_element(By.TAG_NAME, "button")
     submit_button.click()
 
     # Close the browser window
