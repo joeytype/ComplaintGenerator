@@ -16,7 +16,7 @@ def fill_form(complaint, link):
     driver.get(link)
 
     # Wait for the input fields to become visible, then fill them with the provided input values
-    wait = WebDriverWait(driver, 2)
+    wait = WebDriverWait(driver, 10)
     first_name_input = wait.until(EC.visibility_of_element_located((By.ID, "Textbox-1")))
     first_name_input.send_keys(complaint.first_name)
 
