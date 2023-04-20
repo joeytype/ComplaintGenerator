@@ -30,10 +30,11 @@ def create_complaint():
 # methods.print_complaint(complaint1)
 
 
-#OK THIS IS POWERFUL ONLY RUN IF YOURE SURE EVERYTHINGS READY
+#from before captchagate this was originally intended to loop and spam the form 500 times
+# for i in range (500):
+#     complaint = create_complaint()
+#     methods.fill_form(complaint, "https://ago.mo.gov/file-a-complaint/transgender-center-concerns")
 
 
-
-for i in range(500):
-    complaint = create_complaint()
-    methods.fill_form(complaint, "https://ago.mo.gov/file-a-complaint/transgender-center-concerns")
+complaint = create_complaint()
+methods.fill_form(complaint, "https://ago.mo.gov/file-a-complaint/transgender-center-concerns")
