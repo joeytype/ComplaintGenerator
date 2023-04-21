@@ -42,6 +42,7 @@ def fill_form(complaint, link):
     input("Please fill the captcha and hit submit, then press enter to continue...")
 
     driver.quit()
+    return
 
 
 #old function from before captchagate
