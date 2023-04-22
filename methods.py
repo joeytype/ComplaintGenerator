@@ -108,12 +108,26 @@ def read_file_to_list(filename):
 def generate_missouri_zipcode():
     number = random.randint(0, 999)
     number_str = str(number)
+    number_str.zfill(3)
     return "63" + number_str
+
+def generate_florida_zipcode():
+    number = random.randint(0,999)
+    number_str = str(number)
+    number_str.zfill(3)
+    prefix = random.choice(["32", "33", "34"])
+    return prefix + number_str
 
 def generate_missouri_phone_number():
     area_code = random.choice(["314", "417", "573", "636", "660", "816"])
     prefix = random.randint(200, 999)
     line_number = random.randint(1000, 9999)
+    return f"({area_code}){prefix}{line_number}"
+
+def generate_florida_phone_number():
+    area_code = random.choice(["239", "305", "321", "352", "386", "407", "561", "727", "754", "772", "786", "813", "850", "863", "904", "941"])
+    prefix = random.randint(200, 999)
+    line_number = random.randint(1000, 999)
     return f"({area_code}){prefix}{line_number}"
 
 def generate_email(first_name, surname):
